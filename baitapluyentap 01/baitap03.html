@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập03</title>
+</head>
+<body>
+    <!-- viết chương trình nhập vao 10 số nguyên sa đó in ra giá trị lớn nhất và trung bình của chúng-->
+        <script>
+        let mang =[];
+        mang[0]=parseFloat(prompt("nhập số thứ nhất"));
+        mang[1]=parseFloat(prompt("nhập số thứ hai"));
+        mang[2]=parseFloat(prompt("nhập số thứ ba"));
+        mang[3]=parseFloat(prompt("nhập số thứ bốn"));
+        mang[4]=parseFloat(prompt("nhập số thứ năm"));
+        mang[5]=parseFloat(prompt("nhập số thứ sáu"));
+        mang[6]=parseFloat(prompt("nhập số thứ bảy"));
+        mang[7]=parseFloat(prompt("nhập số thứ tám"));
+        mang[8]=parseFloat(prompt("nhập số thứ chín"));
+        mang[9]=parseFloat(prompt("nhập số thứ mười"));
+
+        let max =mang[0];
+        let index=0;
+        let trunBinh;
+        let sum=0;
+        for (let j=1;j<mang.length;j++) {
+            if (mang[j]>max) {
+                max=mang[j];
+                index=j;
+            }
+            sum+=mang[j];
+        }
+        document.write("giá tri lớn nhất trong mảng là :" + max + " tại index "+ index +"<br>");
+        document.write("gia trị trung bình là :" + sum/mang.length);
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

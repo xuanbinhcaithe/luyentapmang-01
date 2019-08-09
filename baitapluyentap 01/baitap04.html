@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 04 </title>
+</head>
+<body>
+    <!--  viết chương trình khởi tạo số nguyên và đảo ngược các phần tử của mảng đấy-->
+    <script>
+        let mang = [1,5,56,78,95,12,24];
+        let begin=0;
+        let end =mang.length-1;
+        while (begin<end) {
+            let b=mang[begin];
+            mang[begin]=mang[end];
+            mang[end]=b;
+            begin++;
+            end--;
+        }
+        document.write(mang);
+
+
+
+    </script>
+
+
+
+</body>
+</html>

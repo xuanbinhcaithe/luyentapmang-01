@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tập  06</title>
+</head>
+<body>
+        <script>
+        let mang =[1,23,45,78,14,54,12,21,15,1];
+        // mang[0]=parseInt(prompt("nhập số thứ nhất"));
+        // mang[1]=parseInt(prompt("nhập số thứ hai"));
+        // mang[2]=parseInt(prompt("nhập số thứ ba"));
+        // mang[3]=parseInt(prompt("nhập số thứ bốn"));
+        // mang[4]=parseInt(prompt("nhập số thứ năm"));
+        // mang[5]=parseInt(prompt("nhập số thứ sáu"));
+        // mang[6]=parseInt(prompt("nhập số thứ bảy"));
+        // mang[7]=parseInt(prompt("nhập số thứ tám"));
+        // mang[8]=parseInt(prompt("nhập số thứ chín"));
+        // mang[9]=parseInt(prompt("nhập số thứ mười"));
+        alert(mang);
+        let dem = 0;
+        let number=parseInt(prompt('enter number :'));
+        for (let i = 0; i < mang.length;i++) {
+            if (number === mang[i]) {
+                document.write(number + " có trong mảng");
+                break; }
+                 else {
+                    dem +=1;
+                 }
+        }if (dem === mang.length ) {
+            alert("khong co");
+            console.log(dem);
+            console.log(mang.length)
+        }
+        //while (num)
+        </script>
+
+</body>
+</html>
